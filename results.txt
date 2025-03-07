@@ -1,0 +1,43 @@
+ CrossValidation Results (5 Folds, 20 Epochs Each)  
+Dataset Size: 450 samples after filtering  
+
+
+ Fold 1  
+ Best Val Dice: 0.4051 (Epoch 20)  
+ Hausdorff Distance: 55.6956  
+
+ Fold 2  
+ Best Val Dice: 0.3563 (Epoch 20)  
+ Hausdorff Distance: 68.3177  
+
+ Fold 3  
+ Best Val Dice: 0.4561 (Epoch 19)  
+ Hausdorff Distance: 46.0424  
+
+   Fold 4  
+ Best Val Dice: 0.5071 (Epoch 20)  
+ Hausdorff Distance: 35.3593  
+
+ Fold 5  
+ Best Val Dice: 0.4304 (Epoch 18)  
+ Hausdorff Distance: 46.4126  
+
+
+
+ Summary of Best Metrics  
+| Fold | Best Val Dice | Epoch | Hausdorff Distance |  
+|||||  
+| 1    | 0.4051        | 20    | 55.6956            |  
+| 2    | 0.3563        | 20    | 68.3177            |  
+| 3    | 0.4561        | 19    | 46.0424            |  
+| 4    | 0.5071        | 20    | 35.3593            |  
+| 5    | 0.4304        | 18    | 46.4126            |  
+
+Average Val Dice: 0.4310  
+Key Observations:  
+ Fold 4 achieved the highest Dice score (0.5071) and lowest Hausdorff distance (35.36).  
+ Training loss consistently decreased across all folds.  
+ Early folds showed instability (e.g., warnings about `nan/inf` distances).  
+
+
+Training Time: ~2023 seconds per epoch (varies by fold).
