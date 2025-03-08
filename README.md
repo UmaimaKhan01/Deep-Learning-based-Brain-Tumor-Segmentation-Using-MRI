@@ -141,10 +141,6 @@ The training process includes:
 
 [4] MONAI: Medical Open Network for AI. https://github.com/Project-MONAI/MONAI
 
-## License
-
-This project is provided as-is for educational purposes.
-
 ## Author
 
 Umaima Khan - fn653419@ucf.edu
